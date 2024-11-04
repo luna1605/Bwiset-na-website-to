@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/BG\ ADMIN.jpg');  /* Path to your image */
+    background-size: cover;  /* Makes the image cover the entire page */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents tiling */
+    background-attachment: fixed;  /* Keeps the image fixed during scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #000000; /* Optional: sets text color to white for better readability on dark backgrounds */
+}
+
+.container {
+    border-radius: 10px;
+    width: 85%;  /* Increase width */
+    max-width: 500px;  /* Maximum width */
+    background-color: #F5F7F8;
+    padding: 30px;  /* Increased padding */
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2 {
+    font-size: 25px;
+}
+
+.register-form, .login-form {
+    font-size: 22px;  /* Larger font size */
+    font-family: 'UbuntuBold';
+    width: 100%;
+}
+
+h2 {
+    font-family: 'UbuntuBold';
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'UbuntuBold';
+    color: #333;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="number"], input[type="date"] {
+    font-family: 'UbuntuReg';
+    width: 100%;
+    height: 50px;  /* Increased input height */
+    margin-bottom: 20px;
+    padding: 12px;  /* Increased padding */
+    border: 1px solid #ccc;
+    font-size: 20px;  /* Larger input font size */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    font-size: 20px;  /* Larger button font */
+    font-family: 'UbuntuBold';
+    width: 100%;
+    height: 50px;  /* Larger button height */
+    background-color: #B14749;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #AC282E;
+}
+
+@font-face {
+    font-family: 'UbuntuReg'; 
+    src: url('fonts/Ubuntu-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: 'UbuntuBold'; 
+    src: url('fonts/Ubuntu-Bold.ttf'); 
+}
+
+/* Link styling */
+p a {
+    color: #B14749;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Error messages */
+span.error {
+    color: red;
+    font-size: 14px;
+}
+
+/* Centered image (if needed for branding) */
+img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px; /* Adjust width as needed */
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
