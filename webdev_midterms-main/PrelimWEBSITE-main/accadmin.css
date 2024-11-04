@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/BG\ ADMIN.jpg'); 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #000000; 
+}
+
+.container {
+    border-radius: 10px;
+    width: 85%;  
+    max-width: 500px;  
+    background-color: #F5F7F8;
+    padding: 30px; 
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2 {
+    font-size: 25px;
+}
+
+.register-form, .login-form {
+    font-size: 22px;  
+    font-family: 'UbuntuBold';
+    width: 100%;
+}
+
+h2 {
+    font-family: 'UbuntuBold';
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'UbuntuBold';
+    color: #333;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="number"], input[type="date"] {
+    font-family: 'UbuntuReg';
+    width: 100%;
+    height: 50px;  
+    margin-bottom: 20px;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    font-size: 20px;  
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    font-size: 20px;  
+    font-family: 'UbuntuBold';
+    width: 100%;
+    height: 50px;  
+    background-color: #B14749;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #AC282E;
+}
+
+@font-face {
+    font-family: 'UbuntuReg'; 
+    src: url('fonts/Ubuntu-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: 'UbuntuBold'; 
+    src: url('fonts/Ubuntu-Bold.ttf'); 
+}
+
+/* Link styling */
+p a {
+    color: #B14749;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+span.error {
+    color: red;
+    font-size: 14px;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
