@@ -1,0 +1,345 @@
+body {
+  padding-top: 3em; /* Keep this for the fixed header */
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.app-bar {
+  z-index: 1;
+  border-color: #343A40;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #F5F7F8;
+  padding: -3em; /* Adjusted padding for less height */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.app-bar div img {
+    object-fit: contain;
+    width: 200px; /* Reduced image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.app-bar h1 {
+    font-family: 'UbuntuBold';
+    font-size: 20px; /* Reduced font size */
+    margin: 0;
+    color: #B14749;
+}
+
+nav {
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+.nav-btn {
+  font-family: 'UbuntuReg';
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  color: #53555B;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  transition: color 0.2s ease-in-out;
+  margin-top: 10px;
+  position: relative; /* Ensure positioning is relative */
+}
+
+.nav-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #B14749; /* Set the color to red */
+  animation: none; /* Prevent animation on load */
+  transition: width 0.3s ease-in-out; /* Transition for width */
+}
+
+.nav-btnn {
+    background-color: #B14749; /* Background color for the Send Donations button */
+    color: #F5F7F8; /* Button text color */
+    border: 2px solid #343A40; /* Button border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.5em 1em; /* Adjusted padding */
+}
+
+.nav-btn:hover {
+    color: #B14749; /* Change text color on hover */
+}
+
+.nav-btnn:hover {
+    background-color: #AC282E; /* Change background color on hover */
+}
+.nav-btn:hover::after {
+  width: 100%; /* Animate to full width on hover */
+}
+.nav-btnn:hover::after {
+  width: 0; /* Ensure no animation on the Send Donations button */
+}
+.nav-btn:hover:not(.nav-btnn)::after {
+  animation: snake 0.5s ease-in-out forwards; /* Trigger animation on hover */
+}
+
+@keyframes snake {
+  0% {
+      width: 0;
+  }
+  20% {
+      width: 20%;
+  }
+  40% {
+      width: 40%;
+  }
+  60% {
+      width: 60%;
+  }
+  80% {
+      width: 80%;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto; /* Center the container */
+  display:inline-block;
+  flex-direction: left;
+}
+.firstPage-container {
+    background-color: #F5F7F8;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0; /* Added padding for spacing from app bar */
+}
+
+.svgImage-container {
+    margin: 20px;
+    width: 50%; /* Maintain this for layout */
+}
+
+.svgImage-container img {
+    object-fit: cover; 
+    width: 100%; 
+    height: auto; /* Keep the aspect ratio */
+}
+
+.info-container {
+    width: 50%; /* Maintain for layout */
+}
+
+.top-text {
+    color: #53555B;
+    font-size: 1.5em; /* Adjusted size */
+    font-family: 'UbuntuBold';
+    margin: 0; 
+    padding: 0;
+}
+
+.divider {
+    width: 90%; 
+    border: none; 
+    border-top: 2px solid #AC282E; /* Adjusted thickness */
+    margin: 10px 0; 
+}
+
+.bottom-text {
+    opacity: 80%;
+    font-family: 'UbuntuReg';
+    font-size: 1.2em; /* Adjusted size */
+    color: #53555B; 
+}
+
+.red-text {
+    font-size: 1.2em; /* Adjusted size */
+    color: #AC282E; 
+}
+
+.sub-text {
+    opacity: 80%;
+    font-family: 'UbuntuBold';
+    font-size: 1em; /* Adjusted size */
+    color: #343A40; 
+    margin-bottom: 20px; 
+}
+
+.left-container {
+    width: 50%;
+    background-color: #B14749;
+    position: relative;
+}
+
+.left-container, .right-container {
+  flex: 1; /* Maintain equal sizing */
+  padding: 10px; /* Adjust padding as necessary */
+  margin: 0; /* Remove margin to prevent spacing issues */
+}
+
+
+.centered-text {
+  font-family: 'UbuntuBold';
+  font-size: 2.5rem; /* Responsive text size */
+  color: #F5F7F8; 
+  text-align: center; /* Center text */
+}
+
+.disaster-text {
+    padding-left: 20px; /* Adjusted padding */
+    padding-top: 50px; /* Adjusted for better spacing */
+    font-family: 'UbuntuReg';
+    font-size: 1.2em; /* Adjusted size */
+    color: #F5F7F8; 
+}
+
+.right-container {
+    display: flex; 
+    justify-content: right;
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    width: 50%;
+    background-color: #AC282E;
+}
+
+.text {
+  color: #F5F7F8;
+  font-family: 'UbuntuReg';
+  font-size: 1rem; /* Adjusted text size */
+  margin: 5px auto; /* Center text with margin */
+  width: 90%; /* Make text responsive */
+  text-align: start; 
+}
+
+.image-container {
+  display: flex; 
+  justify-content: center; /* Center image */
+  margin: 20px; /* Space around image */
+}
+.secondPage-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.image-container img {
+  max-width: 100%; /* Responsive image */
+  height: auto;
+}
+
+.dividerrr, .dividerr {
+  width: 80%; /* Consistent width for dividers */
+  margin: 10px auto; /* Center dividers */
+  height: 4px; 
+}
+h2, p {
+  margin: 0; /* Reset margins for headers and paragraphs */
+}
+
+.disaster-text {
+  font-family: 'UbuntuReg';
+  font-size: 1.5rem; /* Responsive text size */
+  color: #F5F7F8; 
+}
+
+.text-bold {
+    font-family: 'UbuntuBold'; 
+}
+
+.divider {
+  width: 70%; 
+  height: 2px; 
+  background-color: #ccc; 
+  margin: 2px auto; 
+}
+/* Font face definitions */
+@font-face {
+    font-family: 'UbuntuReg'; 
+    src: url('fonts/Ubuntu-Regular.ttf'); 
+}
+@font-face {
+    font-family: 'UbuntuBold'; 
+    src: url('fonts/Ubuntu-Bold.ttf'); 
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Contact Section */
+.contact-section {
+  padding: 20px;
+  background-color: #8b3232;
+  color: #F5F7F8;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+}
+
+/* Contact Title */
+.contact-section h2 {
+  font-family: 'UbuntuBold';
+  font-size: 24px; /* Adjust size as needed */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center; /* Center the title text */
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  justify-content: center; /* Center child elements horizontally */
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px; /* Set a max width for the container */
+  width: 100%; /* Ensure full width */
+}
+
+/* Contact Info and Social */
+.contact-info, .contact-social {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  text-align: center; /* Center text inside each section */
+}
+
+
+/* Text Styling */
+.contact-info p, .contact-social p {
+  font-family: 'UbuntuReg';
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+.new-button {
+  text-decoration: none;
+  font-family: 'UbuntuReg';
+  font-size: 22px;
+  color: #F5F7F8;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #343A40;
+  width: 180px;
+  height: 60px;
+ margin-right: 60px;
+  background-color: #B14749; 
+  border-radius: 10px; 
+  transition: background-color .5s ease-in-out;
+}
