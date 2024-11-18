@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/BG\ ADMIN.jpg'); 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #000000; 
+}
+
+.container {
+    border-radius: 10px;
+    width: 90%;  
+    max-width: 600px;  
+    background-color: #F5F7F8;
+    padding: 50px; 
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2 {
+    font-size: 25px;
+}
+
+.register-form, .login-form {
+    font-size: 22px;  
+    font-family: 'UbuntuBold';
+    width: 100%;
+}
+
+h2 {
+    font-family: 'UbuntuBold';
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'UbuntuBold';
+    color: #333;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="number"], input[type="date"] {
+    font-family: 'UbuntuReg';
+    width: 100%;
+    height: 50px;  
+    margin-bottom: 20px;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    font-size: 20px;  
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    font-size: 20px;  
+    font-family: 'UbuntuBold';
+    width: 100%;
+    height: 50px;  
+    background-color: #B14749;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #AC282E;
+}
+
+@font-face {
+    font-family: 'UbuntuReg'; 
+    src: url('fonts/Ubuntu-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: 'UbuntuBold'; 
+    src: url('fonts/Ubuntu-Bold.ttf'); 
+}
+
+/* Link styling */
+p a {
+    color: #B14749;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+span.error {
+    color: red;
+    font-size: 14px;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    text-align: center; /* Center the heading */
+    color: #B14749; /* Header color */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="password"],
+input[type="submit"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+input[type="submit"] {
+    background-color: #B14749; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor for button */
+}
+
+input[type="submit"]:hover {
+    background-color: #a13839; /* Darker shade on hover */
+}
+
+p {
+    text-align: center; /* Center the paragraph */
+}
+
+p a {
+    color: #B14749; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.reset-message-container {
+    background-color: #f9f9f9; /* Light background for visibility */
+    border: 1px solid #B14749; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    margin-top: 10px; /* Space above the box */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.reset-message {
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #B14749; /* Use the same color as the header */
+}
